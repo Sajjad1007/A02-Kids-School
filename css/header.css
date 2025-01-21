@@ -1,0 +1,227 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 6% 0;
+}
+
+nav ul,
+#contact-button {
+  display: none;
+}
+
+#nav-title img {
+  width: 3rem;
+}
+
+#nav-title h3 {
+  display: none;
+}
+
+#menu-icon {
+  font-size: 1.7rem;
+}
+
+header hr {
+  margin-top: 0.8rem;
+  border: none;
+  height: 1px;
+  background-color: var(--orange);
+  opacity: 0.3;
+}
+
+#banner {
+  padding: 1.5rem 6%;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 1.2rem;
+}
+
+#banner-content {
+  text-align: center;
+}
+
+#banner-content h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+#banner-content p {
+  font-size: 0.75rem;
+  font-weight: 550;
+  margin: 1rem 0 1.1rem;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.65rem 1.35rem;
+}
+
+.button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+#banner-image img {
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  nav {
+    padding: 1.2rem 8% 0;
+  }
+
+  #nav-title {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  #nav-title h3 {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  header hr {
+    display: none;
+  }
+
+  #banner {
+    padding: 1.5rem 8%;
+  }
+
+  #banner-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #banner-content h1 {
+    font-size: 1.85rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    padding: 1.2rem 10% 0;
+  }
+
+  #nav-title h3,
+  #menu-icon {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8rem;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+
+  nav li > a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 580;
+  }
+
+  nav li > a:hover {
+    opacity: 0.6;
+  }
+
+  #contact-button {
+    display: block;
+    color: #fff;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 1.8rem;
+  }
+
+  #contact-button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+
+  #banner {
+    padding: 1.5rem 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  #banner-content {
+    text-align: left;
+  }
+
+  #banner-content h1 {
+    font-size: 2rem;
+  }
+
+  #banner-content p {
+    font-size: 0.85rem;
+    font-weight: 450;
+    opacity: 0.9;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 1.8rem;
+  }
+
+  #banner-image {
+    min-width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    padding: 1.2rem 11% 0;
+  }
+
+  nav li > a {
+    font-size: 0.9rem;
+  }
+
+  #nav-title h3 {
+    display: block;
+  }
+
+  #banner {
+    padding: 1.5rem 11%;
+    gap: 2.5rem;
+  }
+
+  #banner-content h1 {
+    font-size: 2.4rem;
+  }
+
+  #banner-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #banner {
+    gap: 3rem;
+  }
+
+  #banner-content h1 {
+    font-size: 2.8rem;
+  }
+
+  #banner-content p {
+    font-size: 1rem;
+  }
+}
