@@ -2,7 +2,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 6% 0;
+  padding: 1.2rem 5%;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 nav ul,
@@ -19,11 +21,11 @@ nav ul,
 }
 
 #menu-icon {
-  font-size: 1.7rem;
+  font-size: 1.75rem;
 }
 
 header hr {
-  margin-top: 0.8rem;
+  margin-top: 0.9rem;
   border: none;
   height: 1px;
   background-color: var(--orange);
@@ -31,11 +33,13 @@ header hr {
 }
 
 #banner {
-  padding: 1.5rem 6%;
+  padding: 1.5rem 5%;
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
   gap: 1.2rem;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 #banner-content {
@@ -45,12 +49,18 @@ header hr {
 #banner-content h1 {
   font-size: 1.7rem;
   font-weight: 700;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #banner-content p {
   font-size: 0.75rem;
-  font-weight: 550;
+  font-weight: 540;
   margin: 1rem 0 1.1rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -73,8 +83,9 @@ header hr {
 }
 
 @media screen and (min-width: 576px) {
-  nav {
-    padding: 1.2rem 8% 0;
+  nav,
+  #banner {
+    max-width: 90%;
   }
 
   #nav-title {
@@ -93,25 +104,16 @@ header hr {
     display: none;
   }
 
-  #banner {
-    padding: 1.5rem 8%;
-  }
-
-  #banner-content {
-    width: 90%;
-    margin: 0 auto;
-  }
-
   #banner-content h1 {
-    font-size: 1.85rem;
+    max-width: 70%;
+  }
+
+  #banner-content p {
+    max-width: 80%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  nav {
-    padding: 1.2rem 10% 0;
-  }
-
   #nav-title h3,
   #menu-icon {
     display: none;
@@ -120,7 +122,7 @@ header hr {
   nav ul {
     display: flex;
     justify-content: space-between;
-    gap: 1.8rem;
+    gap: 1.75rem;
   }
 
   nav li {
@@ -154,7 +156,6 @@ header hr {
   }
 
   #banner {
-    padding: 1.5rem 10%;
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
@@ -166,12 +167,14 @@ header hr {
 
   #banner-content h1 {
     font-size: 2rem;
+    max-width: none;
   }
 
   #banner-content p {
     font-size: 0.85rem;
     font-weight: 450;
     opacity: 0.9;
+    max-width: none;
   }
 
   .button {
@@ -186,11 +189,8 @@ header hr {
 }
 
 @media screen and (min-width: 992px) {
-  nav {
-    padding: 1.2rem 11% 0;
-  }
-
-  nav li > a {
+  nav li > a,
+  #banner-content p {
     font-size: 0.9rem;
   }
 
@@ -199,22 +199,17 @@ header hr {
   }
 
   #banner {
-    padding: 1.5rem 11%;
-    gap: 2.5rem;
+    gap: 3rem;
   }
 
   #banner-content h1 {
     font-size: 2.4rem;
   }
-
-  #banner-content p {
-    font-size: 0.9rem;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   #banner {
-    gap: 3rem;
+    gap: 4rem;
   }
 
   #banner-content h1 {

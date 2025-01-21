@@ -1,0 +1,92 @@
+#curriculum-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.curriculum {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 0.6rem;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+#kinder {
+  background-image: linear-gradient(#def5ff, 20%, white);
+  border: 1px solid #def5ff;
+}
+
+#elementary {
+  background-image: linear-gradient(#fff4dc, 20%, white);
+  border: 1px solid #fff4dc;
+}
+
+#medium {
+  background-image: linear-gradient(#f2e8ff, 20%, white);
+  border: 1px solid #f2e8ff;
+}
+
+.curriculum img {
+  height: 5rem;
+}
+
+.curriculum h4 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.curriculum p {
+  font-size: 0.6rem;
+  font-weight: medium;
+  line-height: 1rem;
+  color: var(--gray);
+}
+
+.curriculum a {
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.curriculum a:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 576px) {
+  .curriculum {
+    max-width: 70%;
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #curriculum-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .curriculum {
+    padding: 2.5rem 0.97rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #curriculum-container {
+    gap: 1.3rem;
+  }
+
+  .curriculum {
+    padding: 2.5rem 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .curriculum {
+    padding: 2.5rem 1.5rem;
+  }
+}
