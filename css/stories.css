@@ -44,7 +44,7 @@
 }
 
 .story h5 {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 900;
   line-height: 1.15rem;
   width: 80%;
@@ -53,7 +53,7 @@
 
 #story-button {
   border-radius: 0.75rem;
-  padding: 0.35rem 2rem;
+  padding: 0.5rem 2rem;
   display: block;
   margin: 1.5rem auto 0;
 }
@@ -84,7 +84,7 @@
   }
 
   #flex-story h5 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
     width: 87%;
     margin: 0.8rem auto 1.6rem;
@@ -92,8 +92,8 @@
 
   #flex-story p {
     font-family: "Raleway", serif;
-    line-height: 1.1rem;
-    font-size: 0.66rem;
+    line-height: 1.2rem;
+    font-size: 0.75rem;
     font-weight: 500;
     width: 87%;
     margin: 0 auto 1.2rem;

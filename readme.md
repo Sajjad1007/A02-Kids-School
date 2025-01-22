@@ -91,7 +91,7 @@
 # What to Submit
 
 - Your GitHub repository (ex. "https://github.com/ProgrammingHero1/B11--assignment-02")
-- Your website's live link (ex. "https://github.com/ProgrammingHero1/B11--assignment-02")
+- Your live website (ex. "https://github.com/ProgrammingHero1/B11--assignment-02")
 
 ---
 
