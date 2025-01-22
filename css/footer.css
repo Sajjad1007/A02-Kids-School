@@ -1,0 +1,115 @@
+#footer {
+  background-color: var(--skyblue);
+  color: #fff;
+}
+
+#footer-container {
+  padding: 3rem 5% 2.5rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+#footer-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#footer img {
+  width: 4rem;
+}
+
+#footer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+#footer p {
+  font-size: 0.75rem;
+  margin: 1.4rem 0 2.2rem 0.5rem;
+  line-height: 1.1rem;
+}
+
+#about-school,
+#keep-touch {
+  margin-left: 0.5rem;
+}
+
+#about-school h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#about-school li {
+  list-style-type: none;
+  margin-bottom: 0.7rem;
+  font-size: 0.8rem;
+}
+
+#about-school li a {
+  text-decoration: none;
+  color: white;
+}
+
+#about-school li a:hover {
+  opacity: 0.75;
+}
+
+#keep-touch {
+  margin-top: 2.2rem;
+}
+
+#keep-touch h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+#keep-touch img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  #footer-container {
+    max-width: 89%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #footer-container {
+    max-width: 87%;
+    padding: 6rem 5% 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #footer-header {
+    max-width: 40%;
+  }
+
+  #about-school,
+  #keep-touch {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #footer-container {
+    max-width: 84%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #footer-container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #footer-container {
+    max-width: 75%;
+  }
+}

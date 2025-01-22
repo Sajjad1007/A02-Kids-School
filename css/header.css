@@ -24,7 +24,7 @@ nav ul,
   font-size: 2rem;
 }
 
-header hr {
+#header hr {
   margin-top: 0.6rem;
   border: none;
   height: 1px;
@@ -101,7 +101,7 @@ header hr {
     font-weight: bold;
   }
 
-  header hr {
+  #header hr {
     display: none;
   }
 
