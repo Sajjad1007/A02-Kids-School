@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 5%;
+  padding: 1rem 5% 0;
   max-width: 520px;
   margin: 0 auto;
 }
@@ -21,11 +21,11 @@ nav ul,
 }
 
 #menu-icon {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 header hr {
-  margin-top: 0.9rem;
+  margin-top: 0.6rem;
   border: none;
   height: 1px;
   background-color: var(--orange);
@@ -33,7 +33,7 @@ header hr {
 }
 
 #banner {
-  padding: 1.5rem 5%;
+  padding: 1.5rem 5% 0;
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
@@ -47,16 +47,17 @@ header hr {
 }
 
 #banner-content h1 {
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: bold;
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #banner-content p {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 540;
+  opacity: 0.95;
   margin: 1rem 0 1.1rem;
   max-width: 400px;
   margin-left: auto;
@@ -65,12 +66,12 @@ header hr {
 
 .button {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: bold;
   color: #fff;
   background-color: black;
   border: none;
   border-radius: 0.5rem;
-  padding: 0.65rem 1.35rem;
+  padding: 0.65rem 1.3rem;
 }
 
 .button:hover {
@@ -85,7 +86,7 @@ header hr {
 @media screen and (min-width: 576px) {
   nav,
   #banner {
-    max-width: 90%;
+    max-width: 89%;
   }
 
   #nav-title {
@@ -96,8 +97,8 @@ header hr {
 
   #nav-title h3 {
     display: block;
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 
   header hr {
@@ -114,6 +115,11 @@ header hr {
 }
 
 @media screen and (min-width: 768px) {
+  nav,
+  #banner {
+    max-width: 87%;
+  }
+
   #nav-title h3,
   #menu-icon {
     display: none;
@@ -121,8 +127,7 @@ header hr {
 
   nav ul {
     display: flex;
-    justify-content: space-between;
-    gap: 1.75rem;
+    gap: 2.5vw;
   }
 
   nav li {
@@ -136,7 +141,7 @@ header hr {
   }
 
   nav li > a:hover {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 
   #contact-button {
@@ -146,8 +151,8 @@ header hr {
     border: none;
     border-radius: 0.5rem;
     font-size: 0.9rem;
-    font-weight: 600;
-    padding: 0.5rem 1.8rem;
+    font-weight: bold;
+    padding: 0.5rem 1.75rem;
   }
 
   #contact-button:hover {
@@ -166,21 +171,18 @@ header hr {
   }
 
   #banner-content h1 {
-    font-size: 2rem;
+    font-size: 2.15rem;
     max-width: none;
   }
 
   #banner-content p {
-    font-size: 0.85rem;
     font-weight: 450;
-    opacity: 0.9;
     max-width: none;
   }
 
   .button {
     font-size: 0.9rem;
-    font-weight: 600;
-    padding: 0.5rem 1.8rem;
+    padding: 0.5rem 1.75rem;
   }
 
   #banner-image {
@@ -189,6 +191,11 @@ header hr {
 }
 
 @media screen and (min-width: 992px) {
+  nav,
+  #banner {
+    max-width: 84%;
+  }
+
   nav li > a,
   #banner-content p {
     font-size: 0.9rem;
@@ -203,11 +210,16 @@ header hr {
   }
 
   #banner-content h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  nav,
+  #banner {
+    max-width: 80%;
+  }
+
   #banner {
     gap: 4rem;
   }
@@ -217,6 +229,25 @@ header hr {
   }
 
   #banner-content p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  nav,
+  #banner {
+    max-width: 75%;
+  }
+
+  #banner {
+    gap: 5rem;
+  }
+
+  #banner-content h1 {
+    font-size: 3rem;
+  }
+
+  #banner-content p {
+    font-size: 1.15rem;
   }
 }

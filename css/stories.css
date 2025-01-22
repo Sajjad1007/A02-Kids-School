@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+#stories {
+  padding-bottom: 2.5rem;
+}
+
+#stories-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#flex-story {
+  display: none;
+}
+
+#grid-stories {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.7rem;
+}
+
+.story {
+  border-radius: 0.7rem;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.story img {
+  width: 100%;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.story date {
+  font-family: "Raleway", serif;
+  font-size: 0.6rem;
+  font-weight: 450;
+  color: white;
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.8rem;
+  position: relative;
+  bottom: 1.15rem;
+  left: 10%;
+}
+
+.story h5 {
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1.15rem;
+  width: 80%;
+  margin: 0 auto 1.25rem;
+}
+
+#story-button {
+  border-radius: 0.75rem;
+  padding: 0.35rem 2rem;
+  display: block;
+  margin: 1.5rem auto 0;
+}
+
+@media screen and (min-width: 576px) {
+  #stories-container {
+    max-width: 85%;
+  }
+
+  #grid-stories {
+    gap: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #stories-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+    gap: 0.7rem;
+    align-items: stretch;
+  }
+
+  #flex-story {
+    display: block;
+    min-width: calc((100% - 1.3rem) / 2);
+    max-width: calc((100% - 1.3rem) / 2);
+  }
+
+  #flex-story h5 {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    width: 87%;
+    margin: 0.8rem auto 1.6rem;
+  }
+
+  #flex-story p {
+    font-family: "Raleway", serif;
+    line-height: 1.1rem;
+    font-size: 0.66rem;
+    font-weight: 500;
+    width: 87%;
+    margin: 0 auto 1.2rem;
+    color: #666666;
+  }
+
+  #flex-story date {
+    left: 7%;
+  }
+
+  #grid-stories {
+    gap: 0.7rem;
+  }
+
+  .story h5 {
+    margin: 0 auto 1rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #story-button {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.75rem;
+  }
+
+  #story-button {
+    margin: 2.75rem auto 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #stories-container,
+  #grid-stories {
+    gap: 0.9rem;
+  }
+}
